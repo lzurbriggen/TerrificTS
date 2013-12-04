@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TerrificTS Example</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="mod mod-title" data-connectors="c1">
+			Title
+		</div>
+		<div class="mod mod-example">
+			Example
+		</div>
+		<div class="mod mod-example skin-example-blue" data-connectors="c1">
+			Example (Blue) - Click to change color of the title module
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../terrific-2.0.1.js"></script>
+		<script type="text/javascript" src="modules/example/example.js"></script>
+		<script type="text/javascript" src="modules/example/example-blue.js"></script>
+		<script type="text/javascript" src="modules/title/title.js"></script>
+		<script>
+			$(document).ready(function() {
+				var application = new Tc.Application($('html'), {});
+				application.registerModules();
+				application.start();
+			});
+		</script>
+	</body>
+</html>

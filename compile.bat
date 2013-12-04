@@ -1,0 +1,1 @@
+cmd /k tsc terrific-2.0.1.ts --declaration

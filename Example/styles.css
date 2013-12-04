@@ -1,0 +1,22 @@
+html, body {
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+.mod {
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+.mod-title.blue {
+	background: #5EC9FF;
+}
+
+.skin-example-blue {
+	background: #5EC9FF;
+}
+
+.skin-example-blue:hover {
+	cursor: pointer;
+}
