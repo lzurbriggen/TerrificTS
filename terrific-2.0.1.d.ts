@@ -1,6 +1,7 @@
 /// <reference path="jquery.d.ts" />
 declare module Tc {
     var $: JQueryStatic;
+    var Config: any;
     class Application {
         public config: Object;
         public $ctx: JQuery;

@@ -4,7 +4,7 @@ module Tc {
 
 	export var $: JQueryStatic = jQuery; 
 
-	var Config: any = {
+	export var Config: any = {
 		dependencies: {
 			css: '/css/dependencies',
 			js: '/js/dependencies'
@@ -20,7 +20,7 @@ module Tc {
 
 		constructor($ctx: JQuery, config: Object) {
 			this.$ctx = $ctx || $('body');
-			//$.extend(Tc.Config, config);
+			$.extend(Tc.Config, config);
 			this.modules = [];
 			this.connectors = [];
 			this.sandbox = new Sandbox(this, this.config);

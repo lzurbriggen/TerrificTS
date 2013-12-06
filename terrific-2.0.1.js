@@ -3,7 +3,7 @@ var Tc;
 (function (Tc) {
     Tc.$ = jQuery;
 
-    var Config = {
+    Tc.Config = {
         dependencies: {
             css: '/css/dependencies',
             js: '/js/dependencies'
@@ -13,8 +13,7 @@ var Tc;
     var Application = (function () {
         function Application($ctx, config) {
             this.$ctx = $ctx || Tc.$('body');
-
-            //$.extend(Tc.Config, config);
+            Tc.$.extend(Tc.Config, config);
             this.modules = [];
             this.connectors = [];
             this.sandbox = new Sandbox(this, this.config);
